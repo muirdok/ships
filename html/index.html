@@ -4,336 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giants of the Sea · Largest Ships in the World</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-        }
-
-        body {
-            background: linear-gradient(145deg, #0a1a2b 0%, #0b2b3f 100%);
-            color: #e6f1ff;
-            padding: 2rem 1rem;
-            line-height: 1.5;
-        }
-
-        .container {
-            max-width: 1300px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            background: linear-gradient(135deg, #a8d8ff, #6bb5e8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.25rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .subhead {
-            font-size: 1.2rem;
-            color: #90b8d4;
-            margin-bottom: 2.5rem;
-            border-left: 4px solid #2a7faa;
-            padding-left: 1.2rem;
-            font-weight: 300;
-            letter-spacing: 0.3px;
-        }
-
-        .grid-legend {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.8rem;
-            background: rgba(0, 40, 70, 0.5);
-            backdrop-filter: blur(6px);
-            border-radius: 28px;
-            padding: 1rem 2rem;
-            margin-bottom: 3rem;
-            border: 1px solid #1e5f7e;
-            font-size: 0.95rem;
-        }
-
-        .legend-item {
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-        }
-
-        .legend-color {
-            width: 18px;
-            height: 18px;
-            border-radius: 6px;
-        }
-
-        .section-title {
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin: 2.5rem 0 1.2rem 0;
-            color: #c6e2ff;
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-        }
-
-        .section-title span {
-            background: #1e5f7e;
-            font-size: 1.2rem;
-            padding: 0.2rem 0.8rem;
-            border-radius: 40px;
-            color: #b1dcff;
-        }
-
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.8rem;
-            margin-bottom: 2.5rem;
-        }
-
-        .card {
-            background: rgba(12, 35, 55, 0.8);
-            backdrop-filter: blur(4px);
-            border: 1px solid #1d4e6b;
-            border-radius: 26px;
-            padding: 1.6rem 1.4rem;
-            transition: transform 0.2s, border-color 0.2s;
-            box-shadow: 0 12px 22px -10px rgba(0, 0, 0, 0.6);
-        }
-
-        .card:hover {
-            border-color: #3d8bb8;
-            transform: translateY(-4px);
-        }
-
-        .card h3 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin-bottom: 0.4rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .badge {
-            font-size: 0.75rem;
-            background: #1e5f7e;
-            padding: 0.25rem 0.8rem;
-            border-radius: 40px;
-            font-weight: 400;
-            color: #d4ecff;
-        }
-
-        .spec-row {
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px dashed #2b5b78;
-            padding: 0.6rem 0;
-            font-size: 0.95rem;
-        }
-
-        .spec-label {
-            color: #91b8d0;
-        }
-
-        .spec-value {
-            font-weight: 600;
-            color: #ffffff;
-        }
-
-        /* Image gallery */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.8rem;
-            margin: 1.5rem 0 2rem;
-        }
-
-        .gallery-item {
-            background: #0b1f2e;
-            border-radius: 24px;
-            overflow: hidden;
-            border: 1px solid #1d5068;
-            transition: transform 0.2s, border-color 0.2s;
-            box-shadow: 0 12px 24px -12px black;
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.01);
-            border-color: #3d8bb8;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 190px;
-            object-fit: cover;
-            display: block;
-            background: #16344a;
-        }
-
-        .gallery-item .img-caption {
-            padding: 1rem 1.2rem 1.2rem;
-            font-size: 0.95rem;
-        }
-
-        .img-caption strong {
-            color: #c6e2ff;
-            display: block;
-            margin-bottom: 0.3rem;
-            font-size: 1.05rem;
-        }
-
-        .img-caption span {
-            color: #90b8d4;
-            font-size: 0.85rem;
-        }
-
-        /* Chart section */
-        .chart-section {
-            background: #0b1f2e;
-            border-radius: 30px;
-            padding: 2rem 1.8rem;
-            margin: 3rem 0;
-            border: 1px solid #1d5068;
-            box-shadow: 0 20px 30px -15px #00000080;
-        }
-
-        .chart-title {
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: #bfdfff;
-            margin-bottom: 1.8rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .bar-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1.4rem;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-        }
-
-        .bar-label {
-            width: 140px;
-            font-weight: 500;
-            font-size: 0.95rem;
-            color: #c9def0;
-        }
-
-        .bar-container {
-            flex: 1;
-            height: 32px;
-            background: #102d40;
-            border-radius: 40px;
-            overflow: hidden;
-            box-shadow: inset 0 2px 5px #00000055;
-        }
-
-        .bar-fill {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            padding-right: 12px;
-            color: white;
-            font-weight: 600;
-            font-size: 0.85rem;
-            border-radius: 40px;
-            text-shadow: 0 1px 3px black;
-            min-width: 60px;
-        }
-
-        .bar-value {
-            margin-left: 1rem;
-            font-weight: 700;
-            font-variant-numeric: tabular-nums;
-            min-width: 90px;
-            color: #c3e2ff;
-        }
-
-        /* Schematics */
-        .schema-area {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2.5rem;
-            margin-top: 2.5rem;
-            justify-content: center;
-        }
-
-        .ship-schema {
-            flex: 1 1 300px;
-            max-width: 500px;
-            background: #0a1e2c;
-            border-radius: 30px;
-            padding: 1.5rem 1.5rem 1rem 1.5rem;
-            border: 1px solid #246080;
-            transition: all 0.2s;
-        }
-
-        .ship-schema h4 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-            color: #e1f0ff;
-            text-align: center;
-        }
-
-        .schema-caption {
-            text-align: center;
-            font-size: 0.85rem;
-            color: #7daac9;
-            margin-top: 0.5rem;
-        }
-
-        svg {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .small-note {
-            background: #0f2c3c;
-            border-radius: 20px;
-            padding: 1rem 1.8rem;
-            font-size: 0.9rem;
-            color: #b2d3ea;
-            margin-top: 3rem;
-            border-left: 6px solid #2f7fa0;
-        }
-
-        .footer {
-            margin-top: 4rem;
-            font-size: 0.85rem;
-            text-align: center;
-            color: #5d8aa8;
-            border-top: 1px solid #1a4760;
-            padding-top: 2rem;
-        }
-
-        @media (max-width: 700px) {
-            h1 { font-size: 2rem; }
-            .bar-label { width: 100%; margin-bottom: 0.2rem; }
-            .bar-item { flex-wrap: wrap; }
-            .bar-value { margin-left: 0; }
-        }
-    </style>
+    <meta name="description" content="The biggest ships ever built — length, tonnage, and capacity comparisons with schematics and photos.">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 <div class="container">
 
-    <h1>⚓ Giants of the Sea</h1>
-    <div class="subhead">The largest ships ever built — by length, tonnage & capacity (2026)</div>
+    <header class="site-header">
+        <a class="brand" href="/">
+            <img src="/favicon.svg" alt="Giants of the Sea logo">
+            Giants of the Sea
+        </a>
+        <nav class="site-nav">
+            <a href="/" class="active">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/download/ships.txt">Data</a>
+            <a href="/privacy.html">Privacy</a>
+        </nav>
+    </header>
 
-    <!-- Legend -->
+    <h1>⚓ Giants of the Sea</h1>
+    <div class="subhead">The largest ships ever built — by length, tonnage &amp; capacity (2026)</div>
+
     <div class="grid-legend">
         <div class="legend-item"><div class="legend-color" style="background:#4ea6d4;"></div> Length overall (LOA)</div>
         <div class="legend-item"><div class="legend-color" style="background:#e8b45a;"></div> Gross tonnage (GT)</div>
@@ -341,88 +35,77 @@
         <div class="legend-item"><div class="legend-color" style="background:#d46b8c;"></div> Container capacity (TEU)</div>
     </div>
 
-    <!-- Photo gallery -->
-    <div class="section-title">📸 Views & photographs <span>real giants</span></div>
+    <div class="section-title">📸 Views &amp; photographs <span>real giants</span></div>
     <div class="gallery">
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop" alt="Container ship at sea" loading="lazy">
+            <img src="/images/container-ship.jpg" alt="Ultra-large container ship at sea" loading="lazy">
             <div class="img-caption">
                 <strong>Ultra-large container ship</strong>
-                <span>MSC Irina class · 24,000+ TEU · image for illustration</span>
+                <span>MSC Irina class · 24,000+ TEU</span>
             </div>
         </div>
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1548407260-da850faa41e3?w=800&auto=format&fit=crop" alt="Cruise ship" loading="lazy">
+            <img src="/images/cruise-ship.jpg" alt="Icon-class cruise ship" loading="lazy">
             <div class="img-caption">
                 <strong>Floating city · Icon class</strong>
-                <span>Legend of the Seas · 20 decks · photo reference</span>
+                <span>Legend of the Seas · 20 decks</span>
             </div>
         </div>
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1566843978729-1f2b3f6d5f1e?w=800&auto=format&fit=crop" alt="Supertanker at sea" loading="lazy">
+            <img src="/images/supertanker.jpg" alt="Supertanker at sea" loading="lazy">
             <div class="img-caption">
                 <strong>Crude oil carrier</strong>
-                <span>ULCC class · Seawise Giant legacy · view</span>
+                <span>ULCC class · Seawise Giant legacy</span>
             </div>
         </div>
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?w=800&auto=format&fit=crop" alt="Aircraft carrier" loading="lazy">
+            <img src="/images/aircraft-carrier.jpg" alt="Aircraft carrier at sea" loading="lazy">
             <div class="img-caption">
                 <strong>USS Gerald R. Ford (CVN-78)</strong>
-                <span>Largest warship · nuclear powered · photo</span>
+                <span>Largest warship · nuclear powered</span>
             </div>
         </div>
     </div>
-    <div style="font-size:0.85rem; color:#7daac9; margin-top:-1rem; margin-bottom:1rem; text-align:right;">* Photographic illustrations via Unsplash — representative of each ship type.</div>
 
-    <!-- Length comparison chart -->
     <div class="chart-section">
         <div class="chart-title">📏 Length comparison (meters) — the ultimate size race</div>
-
         <div class="bar-item">
             <div class="bar-label">Seawise Giant (ULCC)</div>
-            <div class="bar-container"><div class="bar-fill" style="width:100%; background: linear-gradient(90deg, #2d7ea0, #4ea6d4);">458 m</div></div>
+            <div class="bar-container"><div class="bar-fill" style="width:100%;">458 m</div></div>
             <div class="bar-value">458.45 m</div>
         </div>
         <div class="bar-item">
             <div class="bar-label">Prelude FLNG</div>
-            <div class="bar-container"><div class="bar-fill" style="width:99%; background: linear-gradient(90deg, #2d7ea0, #4ea6d4);">488 m</div></div>
+            <div class="bar-container"><div class="bar-fill" style="width:99%;">488 m</div></div>
             <div class="bar-value">488 m</div>
         </div>
         <div class="bar-item">
             <div class="bar-label">MSC Irina (ULCS)</div>
-            <div class="bar-container"><div class="bar-fill" style="width:87%; background: linear-gradient(90deg, #2d7ea0, #4ea6d4);">399.9 m</div></div>
+            <div class="bar-container"><div class="bar-fill" style="width:87%;">399.9 m</div></div>
             <div class="bar-value">399.9 m</div>
         </div>
         <div class="bar-item">
             <div class="bar-label">Pioneering Spirit</div>
-            <div class="bar-container"><div class="bar-fill" style="width:83%; background: linear-gradient(90deg, #2d7ea0, #4ea6d4);">382 m</div></div>
+            <div class="bar-container"><div class="bar-fill" style="width:83%;">382 m</div></div>
             <div class="bar-value">382 m</div>
         </div>
         <div class="bar-item">
             <div class="bar-label">Legend of the Seas</div>
-            <div class="bar-container"><div class="bar-fill" style="width:79%; background: linear-gradient(90deg, #2d7ea0, #4ea6d4);">365 m</div></div>
+            <div class="bar-container"><div class="bar-fill" style="width:79%;">365 m</div></div>
             <div class="bar-value">~365 m</div>
         </div>
         <div class="bar-item">
             <div class="bar-label">USS Gerald R. Ford</div>
-            <div class="bar-container"><div class="bar-fill" style="width:72%; background: linear-gradient(90deg, #2d7ea0, #4ea6d4);">333 m</div></div>
+            <div class="bar-container"><div class="bar-fill" style="width:72%;">333 m</div></div>
             <div class="bar-value">333 m</div>
         </div>
         <div class="bar-item">
-            <div class="bar-label">Q-Max LNG (Mozah)</div>
-            <div class="bar-container"><div class="bar-fill" style="width:75%; background: linear-gradient(90deg, #2d7ea0, #4ea6d4);">345 m</div></div>
-            <div class="bar-value">345 m</div>
-        </div>
-        <div class="bar-item">
             <div class="bar-label">RMS Titanic (1912)</div>
-            <div class="bar-container"><div class="bar-fill" style="width:35%; background: linear-gradient(90deg, #2d7ea0, #4ea6d4);">269 m</div></div>
+            <div class="bar-container"><div class="bar-fill" style="width:35%;">269 m</div></div>
             <div class="bar-value">269 m</div>
         </div>
-        <div style="margin-top:1rem; font-size:0.85rem; color:#85aec9; text-align:right;">*Prelude FLNG is a floating facility, not self-propelled, but often listed in size comparisons.</div>
     </div>
 
-    <!-- Record holder cards -->
     <div class="section-title">🏆 Record holders by category <span>2026</span></div>
     <div class="cards-grid">
         <div class="card">
@@ -431,7 +114,6 @@
             <div class="spec-row"><span class="spec-label">Deadweight</span><span class="spec-value">564,763 DWT</span></div>
             <div class="spec-row"><span class="spec-label">Type</span><span class="spec-value">Ultra Large Crude Carrier</span></div>
             <div class="spec-row"><span class="spec-label">Built / Scrapped</span><span class="spec-value">1979 / 2010</span></div>
-            <div style="margin-top:0.8rem; font-size:0.9rem; color:#acd0e8;">The undisputed length and deadweight record holder of all time. Scrapped in India, but her legacy remains.</div>
         </div>
         <div class="card">
             <h3>MSC Irina <span class="badge">LARGEST CONTAINER</span></h3>
@@ -439,7 +121,6 @@
             <div class="spec-row"><span class="spec-label">Capacity</span><span class="spec-value">24,346 TEU</span></div>
             <div class="spec-row"><span class="spec-label">Beam</span><span class="spec-value">61.3 m</span></div>
             <div class="spec-row"><span class="spec-label">Operator</span><span class="spec-value">MSC</span></div>
-            <div style="margin-top:0.8rem; font-size:0.9rem; color:#acd0e8;">Current champion among ultra-large container vessels, pushing the 24,000 TEU barrier.</div>
         </div>
         <div class="card">
             <h3>Legend of the Seas <span class="badge">BIGGEST CRUISE</span></h3>
@@ -447,7 +128,6 @@
             <div class="spec-row"><span class="spec-label">Gross tonnage</span><span class="spec-value">248,660 GT</span></div>
             <div class="spec-row"><span class="spec-label">Passengers (max)</span><span class="spec-value">7,600</span></div>
             <div class="spec-row"><span class="spec-label">Class</span><span class="spec-value">Icon class</span></div>
-            <div style="margin-top:0.8rem; font-size:0.9rem; color:#acd0e8;">The newest floating city by Royal Caribbean, slightly longer than her sisters and packed with 20 decks of attractions.</div>
         </div>
         <div class="card">
             <h3>USS Gerald R. Ford <span class="badge">LARGEST WARSHIP</span></h3>
@@ -455,111 +135,60 @@
             <div class="spec-row"><span class="spec-label">Displacement</span><span class="spec-value">~100,000 t</span></div>
             <div class="spec-row"><span class="spec-label">Aircraft</span><span class="spec-value">75+</span></div>
             <div class="spec-row"><span class="spec-label">Propulsion</span><span class="spec-value">2 nuclear reactors</span></div>
-            <div style="margin-top:0.8rem; font-size:0.9rem; color:#acd0e8;">The most advanced aircraft carrier ever built, capable of 220 sorties per day and housing 4,500 crew.</div>
         </div>
     </div>
 
-    <!-- Schematics -->
-    <div class="section-title">🛳️ Schematics & silhouettes <span>side view</span></div>
+    <div class="section-title">🛳️ Schematics &amp; silhouettes <span>side view</span></div>
     <div class="schema-area">
-
-        <!-- Container ship profile -->
         <div class="ship-schema">
             <h4>MSC Irina (Container)</h4>
             <svg viewBox="0 0 500 100" preserveAspectRatio="xMidYMid meet">
-                <rect x="40" y="55" width="420" height="20" fill="#2e4b60" rx="6" />
-                <rect x="40" y="55" width="420" height="8" fill="#3f6a84" rx="4" />
-                <rect x="380" y="25" width="50" height="32" fill="#5b8ba8" rx="4" />
-                <rect x="390" y="15" width="20" height="12" fill="#8fc6e0" rx="2" />
-                <rect x="70" y="35" width="290" height="22" fill="#d4a34b" rx="4" opacity="0.9" />
-                <rect x="80" y="20" width="270" height="14" fill="#c48b3a" rx="3" opacity="0.8" />
-                <rect x="90" y="8" width="250" height="12" fill="#b0772b" rx="3" opacity="0.7" />
-                <line x1="70" y1="45" x2="360" y2="45" stroke="#e5b86a" stroke-width="1" stroke-dasharray="4 3" />
-                <line x1="80" y1="30" x2="350" y2="30" stroke="#e5b86a" stroke-width="1" stroke-dasharray="4 3" />
+                <rect x="40" y="55" width="420" height="20" fill="#2e4b60" rx="6"/>
+                <rect x="40" y="55" width="420" height="8" fill="#3f6a84" rx="4"/>
+                <rect x="380" y="25" width="50" height="32" fill="#5b8ba8" rx="4"/>
+                <rect x="390" y="15" width="20" height="12" fill="#8fc6e0" rx="2"/>
+                <rect x="70" y="35" width="290" height="22" fill="#d4a34b" rx="4" opacity="0.9"/>
+                <rect x="80" y="20" width="270" height="14" fill="#c48b3a" rx="3" opacity="0.8"/>
+                <rect x="90" y="8" width="250" height="12" fill="#b0772b" rx="3" opacity="0.7"/>
                 <text x="250" y="95" font-size="10" fill="#aac9e0" text-anchor="middle">399.9 m · 24,346 TEU</text>
             </svg>
             <div class="schema-caption">Ultra-large container ship · 24 rows across</div>
         </div>
-
-        <!-- Cruise ship profile -->
         <div class="ship-schema">
             <h4>Legend of the Seas (Cruise)</h4>
             <svg viewBox="0 0 500 100" preserveAspectRatio="xMidYMid meet">
-                <rect x="30" y="50" width="440" height="25" fill="#2e4b60" rx="8" />
-                <rect x="80" y="35" width="340" height="16" fill="#4b7c9a" rx="6" />
-                <rect x="110" y="20" width="280" height="16" fill="#5f8fb0" rx="6" />
-                <rect x="150" y="8" width="200" height="13" fill="#77a7c4" rx="4" />
-                <rect x="40" y="40" width="30" height="18" fill="#95c4dd" rx="3" />
-                <circle cx="330" cy="18" r="6" fill="#d4a34b" />
-                <circle cx="300" cy="14" r="5" fill="#6fc48b" />
-                <rect x="210" y="2" width="15" height="9" fill="#e8b45a" rx="2" />
-                <rect x="190" y="43" width="50" height="6" fill="#6ec8e0" rx="3" opacity="0.9" />
-                <rect x="300" y="43" width="50" height="6" fill="#6ec8e0" rx="3" opacity="0.9" />
+                <rect x="30" y="50" width="440" height="25" fill="#2e4b60" rx="8"/>
+                <rect x="80" y="35" width="340" height="16" fill="#4b7c9a" rx="6"/>
+                <rect x="110" y="20" width="280" height="16" fill="#5f8fb0" rx="6"/>
+                <rect x="150" y="8" width="200" height="13" fill="#77a7c4" rx="4"/>
+                <rect x="40" y="40" width="30" height="18" fill="#95c4dd" rx="3"/>
+                <circle cx="330" cy="18" r="6" fill="#d4a34b"/>
+                <circle cx="300" cy="14" r="5" fill="#6fc48b"/>
                 <text x="250" y="95" font-size="10" fill="#aac9e0" text-anchor="middle">~365 m · 248,660 GT</text>
             </svg>
             <div class="schema-caption">Icon-class cruise ship · 20 decks, 7 pools</div>
         </div>
     </div>
 
-    <!-- ULCC profile -->
-    <div class="schema-area" style="margin-top:1rem;">
-        <div class="ship-schema" style="max-width:700px; flex:1;">
-            <h4>Seawise Giant — ULCC profile</h4>
-            <svg viewBox="0 0 600 80" preserveAspectRatio="xMidYMid meet">
-                <rect x="20" y="40" width="560" height="18" fill="#2e4b60" rx="10" />
-                <rect x="20" y="46" width="560" height="8" fill="#3f6a84" rx="6" />
-                <line x1="80" y1="40" x2="500" y2="40" stroke="#d4a34b" stroke-width="2" stroke-dasharray="6 4" />
-                <rect x="480" y="20" width="45" height="22" fill="#5b8ba8" rx="4" />
-                <rect x="490" y="10" width="18" height="12" fill="#8fc6e0" rx="2" />
-                <rect x="520" y="6" width="10" height="18" fill="#3e5f74" rx="2" />
-                <text x="300" y="72" font-size="10" fill="#aac9e0" text-anchor="middle">458.45 m · 564,763 DWT</text>
-            </svg>
-            <div class="schema-caption">The longest ship ever built · scrapped in 2010</div>
+    <div class="download-banner">
+        <div>
+            <strong>📄 Full dataset</strong><br>
+            <span>All record holders in one plain-text file.</span>
         </div>
-    </div>
-<div style="
-    margin: 2rem 0;
-    background: rgba(12, 35, 55, 0.8);
-    border: 1px solid #1d4e6b;
-    border-radius: 20px;
-    padding: 1.2rem 1.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-">
-    <div>
-        <strong style="color:#c6e2ff; font-size:1.1rem;">📄 Full dataset</strong><br>
-        <span style="color:#90b8d4; font-size:0.9rem;">
-            All record holders in one plain-text file.
-        </span>
-    </div>
-    <a href="/download/ships.txt"
-       download="ships.txt"
-       style="
-           background: linear-gradient(135deg, #2d7ea0, #4ea6d4);
-           color: white;
-           text-decoration: none;
-           padding: 0.7rem 1.6rem;
-           border-radius: 40px;
-           font-weight: 600;
-           transition: transform 0.15s;
-       "
-       onmouseover="this.style.transform='scale(1.05)'"
-       onmouseout="this.style.transform='scale(1)'">
-       ⬇ Download ships.txt
-    </a>
-</div>
-    <!-- Data note -->
-    <div class="small-note">
-        <strong>⚙️ How big is big?</strong> The Seawise Giant’s length of 458 m is roughly 1.5 times the Eiffel Tower’s height. The container ship MSC Irina can carry over 24,000 standard 20‑ft boxes — enough to fill more than 600,000 refrigerators. Modern cruise giants like Legend of the Seas host nearly 10,000 people (passengers + crew) and feature waterparks larger than many land‑based ones.<br>
-        <span style="display:block; margin-top:0.6rem; color:#9bc2dc;">Data compiled from Guinness World Records, classification society records, and industry sources (2026).</span>
+        <a href="/download/ships.txt" download="ships.txt" class="btn-download">⬇ Download ships.txt</a>
     </div>
 
-    <div class="footer">
-        <span>© 2026 · Giants of the Sea · Visual reference based on verified dimensions</span>
+    <div class="small-note">
+        <strong>⚙️ How big is big?</strong> The Seawise Giant’s length of 458 m is roughly 1.5 times the Eiffel Tower’s height. The container ship MSC Irina can carry over 24,000 standard 20-ft boxes — enough to fill more than 600,000 refrigerators.
     </div>
+
+    <footer class="site-footer">
+        <a href="/about.html">About</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/download/ships.txt">Data</a>
+        <br><br>
+        © 2026 · Giants of the Sea · giants-of-the-sea.madata.ru
+    </footer>
 </div>
 </body>
 </html>
