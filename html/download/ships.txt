@@ -1,0 +1,110 @@
+============================================================
+  BIGGEST SHIPS IN THE WORLD — DATA SNAPSHOT (2026)
+  Source: https://giants-of-the-sea.madata.ru
+============================================================
+
+Record holders by category
+------------------------------------------------------------
+1. Seawise Giant (ULCC) — LONGEST SHIP EVER BUILT
+   Length:      458.45 m (1,504 ft)
+   Beam:        68.8 m
+   Deadweight:  564,763 DWT
+   Gross tons:  260,941 GT
+   Built:       1979 (Oppama, Japan)
+   Scrapped:    2010 (Alang, India)
+   Notes:       Largest deadweight tonnage ever recorded.
+                Sank during Iran-Iraq war, later refloated
+                and renamed "Happy Giant", "Jahre Viking",
+                then "Knock Nevis" before demolition.
+
+2. MSC Irina (Container Ship) — LARGEST CONTAINER SHIP
+   Length:      399.9 m
+   Beam:        61.3 m
+   Capacity:    24,346 TEU
+   Gross tons:  233,000 GT
+   Built:       2023 (Hudong-Zhonghua, China)
+   Operator:    Mediterranean Shipping Company (MSC)
+   Notes:       Part of MSC's 24,000+ TEU fleet. Uses
+                dual-fuel LNG-ready propulsion.
+
+3. Legend of the Seas (Cruise Ship) — LARGEST CRUISE SHIP
+   Length:      ~365 m
+   Beam:        ~66 m
+   Gross tons:  248,660 GT
+   Passengers:  5,600 (double) / 7,600 (max)
+   Crew:        ~2,350
+   Decks:       20
+   Built:       2025 (Meyer Turku, Finland)
+   Operator:    Royal Caribbean International
+   Class:       Icon class
+   Notes:       Sister to Icon of the Seas and Utopia of
+                the Seas. Features 7 pools and the largest
+                waterpark at sea.
+
+4. USS Gerald R. Ford (CVN-78) — LARGEST WARSHIP
+   Length:      333 m
+   Beam:        78 m (flight deck)
+   Displacement: ~100,000 t
+   Aircraft:    75+ fixed & rotary wing
+   Propulsion:  2 x A1B nuclear reactors
+   Crew:        ~4,500
+   Built:       2017 (Newport News, USA)
+   Operator:    United States Navy
+   Notes:       Most advanced aircraft carrier ever built.
+                Capable of 220 sorties per day, EMALS
+                catapults, advanced arresting gear.
+
+5. Prelude FLNG (Floating Facility) — LARGEST FLOATING OBJECT
+   Length:      488 m
+   Beam:        74 m
+   Displacement: ~600,000 t (fully loaded)
+   Gross tons:  ~403,000 GT
+   Built:       2017 (Samsung Heavy Industries, S. Korea)
+   Operator:    Shell
+   Location:    Browse Basin, Australia
+   Notes:       Not self-propelled. Extracts, liquefies,
+                stores and offloads LNG at sea. Never
+                entered port under its own power.
+
+6. Pioneering Spirit (Heavy Lift / Pipelay)
+   Length:      382 m
+   Beam:        124 m
+   Gross tons:  ~403,342 GT
+   Built:       2016 (Daewoo Shipbuilding, S. Korea)
+   Operator:    Allseas
+   Notes:       World's largest construction vessel.
+                Can lift 48,000 t topsides in a single
+                lift. Dismantled Shell Brent Delta.
+
+7. Mozah (Q-Max LNG Carrier)
+   Length:      345 m
+   Beam:        53.8 m
+   Capacity:    266,000 m³ LNG
+   Built:       2008 (Samsung Heavy Industries)
+   Operator:    Nakilat
+   Notes:       First Q-Max vessel. Largest LNG carrier
+                class in regular operation.
+
+8. RMS Titanic (Historical Reference)
+   Length:      269 m
+   Beam:        28 m
+   Gross tons:  46,328 GT
+   Built:       1912 (Harland & Wolff, Belfast)
+   Notes:       Largest ship afloat when launched.
+                Sank on maiden voyage, 15 April 1912.
+
+============================================================
+  LEGEND
+------------------------------------------------------------
+  ULCC = Ultra Large Crude Carrier
+  TEU  = Twenty-foot Equivalent Unit (container)
+  GT   = Gross Tonnage (internal volume)
+  DWT  = Deadweight Tonnage (cargo + fuel + crew)
+  LNG  = Liquefied Natural Gas
+  FLNG = Floating Liquefied Natural Gas
+
+============================================================
+  (c) 2026 · giants-of-the-sea.madata.ru
+  Data compiled from public maritime registries,
+  classification societies, and operator disclosures.
+============================================================
